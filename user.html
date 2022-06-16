@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Urdaneta CHO</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <link href="img/CHO.png" rel="icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&family=Roboto:wght@500;700;900&display=swap" rel="stylesheet"> 
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+<style>
+    body {
+
+        background: linear-gradient(to top, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0), rgba(250, 250, 250, 0.4)), url("img/bg-blue.jpg");
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    @media only screen and (max-width:800px) {
+            #no-more-tables tbody,
+            #no-more-tables tr,
+            #no-more-tables td {
+                display: block;
+            }
+            #no-more-tables thead tr {
+                position: absolute;
+                top: -9999px;
+                left: -9999px;
+            }
+            #no-more-tables td {
+                position: relative;
+                padding-left: 50%;
+                border: none;
+                border-bottom: 1px solid #eee;
+            }
+            #no-more-tables td:before {
+                content: attr(data-title);
+                position: absolute;
+                left: 6px;
+                font-weight: bold;
+            }
+            #no-more-tables tr {
+                border-bottom: 1px solid #ccc;
+            }
+        }
+</style>
+</head>
+
+<body>
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0 wow fadeIn" data-wow-delay="0.1s">
+        <a href="#" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
+            <div class="d-flex justify-content-center"><img src="img/profile.png" alt="" height="50"></div>
+            <h4 class="blankquote text-primary"></i>Welcome! Royce D. Hortaleza</h4>
+        </a>
+        <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto p-4 p-lg-0">
+                </div>
+                <a href="my-appointments.html" class="nav-item nav-link">My Appointments</a>
+                <a href="non-appointments.html" class="nav-item nav-link">Requested Documents</a>
+    
+                <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Manage Account</a>
+                        <div class="dropdown-menu rounded-0 rounded-bottom m-0">
+                            <a href="edit-profile.html" class="dropdown-item">Edit Profile</a>
+                            <a href="med-history.html" class="dropdown-item">Medical History</a>
+                        </div>
+            </div>
+            
+            <a href="index.html" class="btn btn-primary rounded-0 py-4 px-lg-5 d-none d-lg-block">Logout<i class="fa fa-arrow-right ms-3"></i></a>
+        </div>
+    </nav>
+    <br>
+    <!-- Navbar End -->
+
+<main class="d-flex justify-content-center">
+    <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
+    </div>
+    <div class="cols-1 mb-3 text-center">
+      <div class="col-6">
+        <div class="card mb-4 rounded-3 shadow-sm">
+          <div class="card-header py-3">
+            <h4 class="my-0 fw-normal">Schedule an Appointment</h4>
+          </div>
+          <div class="card-body">
+            <h4 class="card-title pricing-card-title">You may schedule an appointment for medical concern. Before entering the City Health Office, bring the following:</h4>
+            <ul class="list-unstyled mt-3 mb-4">
+              <li>Appointment Slip</li>
+              <li>Own Ballpen</li>
+              <li>Sanitizer</li>
+            </ul>
+            <a href="user-medreg.html" class="w-100 btn btn-lg btn-primary">Start</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-6">
+        <div class="card mb-4 rounded-3 shadow-sm">
+          <div class="card-header py-3">
+            <h4 class="my-0 fw-normal">Request a Document</h4>
+          </div>
+          <div class="card-body">
+            <h4 class="card-title pricing-card-title">You may request the following documents:</h4>
+            <ul class="list-unstyled mt-3 mb-4">
+            <li>Medical Drug Request</li><li>Request Medical Certificate</li><li>Issuance of Heath IDs</li></ul>
+            <a href="user-regnonmed.html" class="w-100 btn btn-lg btn-primary">Start</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </main>
+    <script src="js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</body>
+</html>
+
+
+

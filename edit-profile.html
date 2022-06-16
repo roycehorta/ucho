@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Urdaneta CHO</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <link href="img/CHO.png" rel="icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&family=Roboto:wght@500;700;900&display=swap" rel="stylesheet"> 
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+<style>
+    body {
+
+        background: linear-gradient(to top, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0), rgba(250, 250, 250, 0.4)), url("img/bg-blue.jpg");
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+</style>
+</head>
+
+<body>
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0 wow fadeIn" data-wow-delay="0.1s">
+        <a href="#" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
+            <div class="d-flex justify-content-center"><img src="img/profile.png" alt="" height="50"></div>
+            <h4 class="blankquote text-primary"></i>Welcome! Royce D. Hortaleza</h4>
+        </a>
+        <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto p-4 p-lg-0">
+                </div>
+                <a href="my-appointments.html" class="nav-item nav-link">My Appointments</a>
+                <a href="non-appointments.html" class="nav-item nav-link">Requested Documents</a>
+    
+                <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Manage Account</a>
+                        <div class="dropdown-menu rounded-0 rounded-bottom m-0">
+                            <a href="medical.html" class="dropdown-item">Edit Profile</a>
+                            <a href="med-history.html" class="dropdown-item">Medical History</a>
+                        </div>
+            </div>
+            
+            <a href="index.html" class="btn btn-primary rounded-0 py-4 px-lg-5 d-none d-lg-block">Logout<i class="fa fa-arrow-right ms-3"></i></a>
+        </div>
+    </nav>
+    <br>
+    <!-- Navbar End -->
+
+    <div class="mx-auto text-start mt-3" style="max-width: 1000px">
+        <div class="card round-2 bg-light rounded p-5 border-0 p-3 mb-4 shadow-sm">
+            <div class="card-body " style="max-height: calc(100vh - 280px); overflow-y: auto">
+                <main>
+
+                    <h2 class="display-6 text-center mb-4">Profile</h2>
+                
+                    <!-- CONTENT HERE -->
+                        <form action="#" method="post" id="profileform">
+                    <div class="mb-3 row">
+                      <label for="fn" class="col-md-3 col-lg-2 col-form-label">Name:</label>
+                      <div class="col-md-8 col-lg-6">
+                        <input type="text" class="form-control" id="fn" name="fn" value="Royce" required>
+                      </div>
+                    </div>
+                    <div class="mb-3 row">
+                      <label for="ln" class="col-md-3 col-lg-2 col-form-label">Middle Name:</label>
+                      <div class="col-md-8 col-lg-6">
+                        <input type="text" class="form-control" id="ln" name="ln" value="Dela Cruz" required>
+                      </div>
+                    </div>
+
+                    <div class="mb-3 row">
+                        <label for="ln" class="col-md-3 col-lg-2 col-form-label">Last Name:</label>
+                        <div class="col-md-8 col-lg-6">
+                          <input type="text" class="form-control" id="ln" name="ln" value="Hortaleza" required>
+                        </div>
+                      </div>
+
+                      <div class="mb-3 row">
+                        <label for="ln" class="col-md-3 col-lg-2 col-form-label">Gender:</label>
+                        <div class="col-md-8 col-lg-6">
+                          <input type="text" class="form-control" id="ln" name="ln" value="Male" disabled readonly>
+                        </div>
+                      </div>
+
+                      <div class="mb-3 row">
+                        <label for="ln" class="col-md-3 col-lg-2 col-form-label">Birthdate:</label>
+                        <div class="col-md-8 col-lg-6">
+                          <input type="text" class="form-control" id="ln" name="ln" value="January 1, 2004" required>
+                        </div>
+                      </div>
+
+                      <div class="mb-3 row">
+                        <label for="mnum" class="col-md-3 col-lg-2 col-form-label">Contact #:</label>
+                        <div class="col-md-8 col-lg-6">
+                          <input type="tel" class="form-control" placeholder="09XXXXXXXXX" pattern="[0-9]{11}" id="mnum" name="mnum" value="9168863522" required>
+                        </div>
+                      </div>
+
+                      <div class="mb-3 row">
+                        <label for="fn" class="col-md-3 col-lg-2 col-form-label">Address:</label>
+                        <div class="col-md-8 col-lg-6">
+                          <input type="text" class="form-control" id="fn" name="fn" value="Dilan Paurido Urdaneta City, Pangasinan 2428" required>
+                        </div>
+                      </div>
+
+                    <div class="mb-3 row">
+                      <label for="uemail" class="col-md-3 col-lg-2 col-form-label">Email Address:</label>
+                      <div class="col-md-8 col-lg-6">
+                        <input type="text" class="form-control" id="uemail" name="uemail" value="rhortaleza_20ur1218@psu.edu.ph" disabled readonly>
+                        <input type="hidden" name="email" id="email" value="rhortaleza_20ur1218@psu.edu.ph">
+                      </div>
+                    </div>
+
+                    <div class="mb-3 row">
+                        <label for="fn" class="col-md-3 col-lg-2 col-form-label">Change Password:</label>
+                        <div class="col-md-8 col-lg-6">
+                          <input type="text" class="form-control" id="fn" name="fn" value="">
+                        </div>
+                      </div>
+                    <button type="submit" class="btn btn-primary" name="submit"> Update Profile </button>
+                    <a href="user.html" class="btn btn-secondary noprint">Back</a>
+                    </form>
+                  </main>
+
+    <script src="js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</body>
+</html>
